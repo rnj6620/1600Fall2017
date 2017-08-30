@@ -11,3 +11,4 @@ Abzu
 Crypt of the Necrodancer
 Final Fantasy X
 Final Fantasy XIII
+Final Fantasy XIV
