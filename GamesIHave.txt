@@ -3,3 +3,4 @@ Morrowind
 Oblivion
 Skyrim
 Dragon Age Origin
+Dragon Age 2
