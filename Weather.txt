@@ -1,8 +1,8 @@
 Weather
 
-Nixa, Missouri 10:00 am MST
-Temperature: 75 Degrees F
-Humidity: 51%
-Dew Point: 56 Degrees F
-Wind: SW 7
-Weather: Sunny
+Orem, Utah 10:00 am MST
+Temperature: 72 Degrees F
+Humidity: 41%
+Dew Point: 46 Degrees F
+Wind: SE 9
+Weather: Partly Cloudy
