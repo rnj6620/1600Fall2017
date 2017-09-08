@@ -1,1 +1,8 @@
 Weather
+
+Orem, Utah 10:00 am
+Temp: 72 degrees F
+Humidity: 41%
+Dew Point: 46 degrees F
+Wind: SE 9
+Weather: Partly Cloudy
