@@ -4,9 +4,9 @@ using UnityEngine;
 
 public class RPGWeaponSwitch : MonoBehaviour {
 
-	public string [] weapons;
+	public string[] weapons;
 	
-	public void MyWeaponSwitch (int i) {
+	public void MyWeaponSwitch (int i){
 		switch (weapons[i])
 		{
 			case "Katana":
