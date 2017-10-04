@@ -6,6 +6,7 @@ public class AddThisToPlayer : MonoBehaviour {
 
 	public Transform attachObject;
 	public GameObject assetArt;
+	public GameObject MoreStuff;
 	void OnTriggerEnter()
 	{
 		transform.parent = attachObject;
