@@ -5,7 +5,7 @@ using UnityEngine;
 public class characterControl : MonoBehaviour {
 
 	public CharacterController characterController;
-	public static bool gameOver;
+	public static bool gameOver = false;
 	public float gravity = 9.81f; // creates a gravity component, defaults to 9.81
 	public float speed = 10;
 	public float jumpForce = 50; // creates jump 
