@@ -6,12 +6,17 @@ using UnityEngine.UI;
 public class UIBar : MonoBehaviour {
 
     public Image bar;
+    public Test coinNum;
+    public int totalCoinValue;
+    public int coinValue = 10;
+
     public GameObject gameOverUI;
     public float powerLevel = 0.1f;
     public float amountToAdd = 0.0f;
  public enum PowerUpType {
         PowerUp,
-        PowerDown
+        PowerDown,
+        CollectCoin
     }
 
     public PowerUpType powerUp;
@@ -26,8 +31,25 @@ public class UIBar : MonoBehaviour {
             case PowerUpType.PowerDown:
                 StartCoroutine(PowerDownBar());
                 break;
+
+                case PowerUpType.CollectCoin:
+                    StartCoroutine(CollectCoin());
+                break;
         }
 	}
+    IEnumerator CollectCoin () {
+        totalCoinValue = int.Parse(coinNum.text);
+        int tempAmount = totalCoinValue + coinValue;
+        while (totalCoinValue <= tempAmount)
+        {
+            coinNum.text = (totalCoinValue++).ToString();
+            yield return new WaitForFixedUpdate();
+        }
+
+     
+    }
+
+
 	  IEnumerator PowerUpBar () {
         float tempAmount = bar.fillAmount + powerLevel;
 		if (tempAmount > 1) {
