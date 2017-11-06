@@ -22,7 +22,7 @@ public class characterControl : MonoBehaviour {
 			}
 		}
 	
-		characterController.Move(move);
+		characterController.Move(moveVector3);
 
 	}
 }
