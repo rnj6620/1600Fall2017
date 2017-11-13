@@ -82,6 +82,6 @@ public class UIBar : MonoBehaviour {
     void EndGame (string _text) {
         endGameText.text = _text;
         gameOverUI.SetActive(true);
-        characterControl.gameOver = true;
+        CharacterControl.gameOver = true;
     }
 }

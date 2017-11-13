@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class characterControl : MonoBehaviour {
+public class CharacterControl : MonoBehaviour {
 
 	public CharacterController characterController;
 	public static bool gameOver = false;

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-public class navMeshAI : characterControl {
+public class NavMeshAI : CharacterControl {
 
 	public Transform player;
 	public NavMeshAgent agent; 
