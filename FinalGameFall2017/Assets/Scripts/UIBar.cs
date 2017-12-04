@@ -17,7 +17,8 @@ public class UIBar : MonoBehaviour {
  public enum PowerUpType {
         PowerUp,
         PowerDown,
-        Win
+        Win,
+        Lose
     }
     public PowerUpType powerUp;
 	void OnTriggerEnter () {
@@ -30,8 +31,11 @@ public class UIBar : MonoBehaviour {
             case PowerUpType.PowerDown:
                 StartCoroutine(PowerDownBar());
                 break;
-                case PowerUpType.Win:
-                    EndGame("You Win!");
+            case PowerUpType.Win:
+                EndGame("You Win!");
+                break;
+            case PowerUpType.Lose:
+                EndGame("You Lose!");
                 break;
         }
 	}
@@ -39,6 +43,7 @@ public class UIBar : MonoBehaviour {
         float tempAmount = bar.fillAmount + powerLevel;
 		if (tempAmount > 1) {
 			tempAmount = 1;
+            print ("Power up!");
 		}
         while (bar.fillAmount < tempAmount) {
             bar.fillAmount += amountToAdd;
@@ -49,6 +54,7 @@ public class UIBar : MonoBehaviour {
         float tempAmount = bar.fillAmount - powerLevel;
        if(tempAmount < 0) {
 	   	tempAmount = 0;
+        print ("Power Down!");
 	   }
 	    while (bar.fillAmount > tempAmount) {
             bar.fillAmount += amountToAdd;
